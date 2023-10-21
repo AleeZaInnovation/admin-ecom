@@ -73,9 +73,7 @@ const BlogAdd = () => {
         onSubmit: (values) => {
             dispatch(createBlogs(values));
             formik.resetForm();
-            setTimeout(() => {
-                dispatch(resetState());
-            }, 300);
+            window.location.reload()
         },
     });
 
